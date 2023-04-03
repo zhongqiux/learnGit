@@ -18,7 +18,6 @@ public class OneKito extends HttpServlet {
         while ((length = source.read(buf)) > 0) {
             String tem = new String(buf,0,length,"UTF-8");
             tem = convertUnicodeToCh(tem);
-            System.out.println(tem);
             target.write(tem);
         }
     }
@@ -68,11 +67,10 @@ public class OneKito extends HttpServlet {
                 //得到响应流
                 InputStream inputStream = con.getInputStream();
 
-                resp.setContentType("text/html;charset=utf-8");
+                resp.setContentType("application/json;charset=utf-8");
 //                resp.setCharacterEncoding("utf-8");
                 PrintWriter writer = resp.getWriter();
                 copy(inputStream,writer);
-                writer.write("你好");
             }
 
         }catch(Exception e) {
