@@ -1,0 +1,36 @@
+@font-face{
+    font-family: baqi;
+    src: url("../fonts/演示镇魂行楷.ttf");
+}
+body {
+    background-image: url(../imag/bac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bgc {
+    width: 880px;
+    margin: 0 auto;
+    /* border: 2px solid pink; */
+}
+
+#oneWord {
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: baqi;
+}
+.cone {
+    margin-top: 300px;
+    height: 96px;
+}
+
+#button {
+    text-decoration: none;
+    color: aliceblue;
+    float: right;
+    margin-right: 50px;
+    font-family: baqi;
+    font-size: 20px;
+}
