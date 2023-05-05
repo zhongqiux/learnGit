@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <div class="header">
+        <ul class="parts">
+            <li class="start"></li>
+            <li class="item back">主页</li>
+            <li class="item"><a href="./hitokoto.html">一言</a></li>
+            <li class="end">zhongqiux<img src="../imag/oceanBac.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="center">
+        <div class="menu">
+            <div>
+                <img src="../imag/oceanBac.jpg" alt="">
+                <span class="moto">唯爱与美食不可辜负</span></div>
+            <a class="intro" href="#jianjie">简介</a>
+            <a class="hobby" href="#aihao">爱好</a>
+        </div>
+        <div class="content">
+            <p id="jianjie">简介</p>
+            <p></p>
+            <p id="aihao">爱好</p>
+        </div>
+    </div>
+    <script>
+        var back = document.querySelector('.back');
+        back.addEventListener('click',function(){
+            window.location.href = './test.html'
+            // console.log('get')
+        })
+    </script>
+</body>
+</html>

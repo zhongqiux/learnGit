@@ -26,7 +26,7 @@ body {
     height: 96px;
 }
 
-#button {
+.change {
     text-decoration: none;
     color: aliceblue;
     float: right;

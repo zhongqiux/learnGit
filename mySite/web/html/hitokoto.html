@@ -9,11 +9,35 @@
 </head>
 <body>
     <div class="bgc cone">
-        <div id="oneWord">开始</div>
+        <div id="oneWord">此生同淋雪，也算共白头</div>
     </div>
     <div class="bgc">
-        <a href="#" id="button">点我试试</a>
+        <a href="javascript:;" class="change">点我试试</a>
     </div>
+    <!-- <div id="app" class="bgc">
+        {{ message }}
+        <button @click = 'add'>增加</button>
+        <input type="text" v-model="message">
+    </div> -->
+
     <script src="../js/change.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const { createApp } = Vue
+        // var app = new Vue
+        var app = createApp({
+            data() {
+                return {
+                    message: 'Hello Vue!'
+                }
+            },
+            methods :{
+                add(){
+                    this.message += '1'
+                }
+            }
+        })
+        app.mount('#app')
+    </script>
 </body>
 </html>

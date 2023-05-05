@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+@font-face{
+    font-family: baqi;
+    src: url("../fonts/演示镇魂行楷.ttf");
+}
+
+body {
+    background-image: url(../imag/bac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.center {
+    width: 90%;
+    margin: auto;
+}
+.button {
+    position:absolute;
+    top: 80%;
+    left: 40%;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
+    background-color: rgb(183, 172, 174,0);
+    text-align: center;
+    font-family: baqi;
+    color: aliceblue;
+    border-radius: 10%;
+}
+/* .content {
+    display: inline-block;
+} */
+.button:hover {
+    background-color: rgb(193, 127, 138);
+    cursor: pointer;
+}
+body {
+    overflow: hidden;
+}
+
+/* .header {
+    background-color: rgba(255, 192, 203,.3);
+    height: 30px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 30px;
+    font-family: baqi;
+    font-size: 18px;
+} */
+#oneWord {
+    text-align: center;
+    color: aliceblue;
+    width: 400px;
+    height: 20px;
+    line-height: 20px;
+    font-family: baqi;
+    vertical-align:middle;
+    margin: auto;
+}
+#oneWord:hover {
+    cursor: pointer;
+}
+.main {
+    height: 1000px;
+    /* background-color: red; */
+}
+
+.welcome {
+    /* background-color: rgba(245,245,220, .3); */
+    /* border: 1px solid green; */
+    font-family: baqi;
+    font-size: 32px;
+    line-height: 40px;
+    float: left;
+    width: 35%;
+    height: 500px;
+    margin-top: 50px;
+
+    background: rgba(254, 254, 254, .6);
+
+    -moz-box-shadow: 0px 0 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0 3px rgba(0, 0, 0, 0.1);
+
+    -moz-transform: rotate(-5deg); 
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.clock {
+    float: right;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}

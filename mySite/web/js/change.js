@@ -1,5 +1,5 @@
 window.onload=function(){
-    var button = document.querySelector("#button");
+    var button = document.querySelector(".change");
     //按钮触发事件
     button.onclick = function () {
         var ajax = new XMLHttpRequest();//异步请求
